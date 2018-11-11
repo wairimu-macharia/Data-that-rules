@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  border: 1px solid rgb(220,220,220);
+}
+
+a {
+  color: inherit;
+}
+
+/* Helper Classes */
+
+.left {   text-align: left;   }
+.right {  text-align: right;  }
+.center { text-align: center; }
+
+.padded-0 { padding: 0%;}
+.padded-1 { padding: 1%;}
+.padded-2 { padding: 2%;}
+.padded-5 { padding: 5%;}
+.margin-bottom1 {margin-bottom: 1%;}
+.margin-bottom5 {margin-bottom: 5%;}
+.small {min-height: 10vh;}
+
+
+/* Universal Styles */
+h1, h2, h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  color: black;
+
+}
+section {
+  padding: 5%;
+  border: 1px solid orange;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  padding: 1%;
+  margin: 1% 0;
+}
+
+body {
+  color: white;
+}
+
+
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb99de7c333b241530872220aa87e93c&auto=format&fit=crop&w=1867&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-image {
+  min-height:60vh;
+  background-image: url("https://images.unsplash.com/photo-1540205082-e56e180508e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cc8260f6b8370c4e32ab6bfc1034254&auto=format&fit=crop&w=2689&q=80");
+}
+
+.intro-images {
+  min-height: 45vh;
+}
+
+.features-images {
+  min-height: 20vh;
+}
+
+.feautures-links {
+  width: 90%;
+  margin: 0 auto;
+}
+/*.line {
+width: 1200px;
+height: 47px;
+border-bottom: 1px solid red;
+position: absolute;
+}*/
+
+.relative {
+  position: relative;
+}
+.bump {
+  margin-bottom: -6rem;
+  bottom: -69vh;
+  margin-top: 4rem;
+  }
+
+.center-div {
+
+}
+
+.center {
+  text-align:center;
+}
+
+
+ /*.inner-box:hover a{
+   color: white;
+
+ }
+
+.fancy-button {
+  text-align:center;
+/*   display:inline-block; */
+  /*font-size: 2rem;
+  position:relative;
+  overflow:hidden;
+  background-color:pink;
+  width:10rem;
+}
+/*.fancy-button span{
+  position:absolute;
+  top:0;
+  right:0;
+  color:red;
+  width:100%;
+
+/*   background-clip: border-box; */
+  height:100%;
+  overflow:hidden;
+  transition:height 2s;
+  background-color:green
+}
+.fancy-button:hover span{
+  height:0;
+
+}
+
+.outer-box {
+  background-color: #548687;
+
+}
+
+.fancy-button2 {
+  text-align:center;
+  font-size: 2rem;
+  position:relative;
+  overflow:hidden;
+  background-color:#51184b;
+  width:10rem;
+}
+
+.fancy-button2 span {
+  position:absolute;
+  top:0;
+  right:0;
+  color:#5d4f42;
+  width:100%;
+}
+.features [class*=col-] {
+  padding: 3%;
+}
+
+.features {
+  background-color: #00a6a6;
+  background-size: cover;
+  color: #ffffff;
+  padding: 1%;
+}
+.features-h3 {
+  font-size:3rem;
+}
+
+.features-icons {
+  font-size:3rem;
+}
+.features-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1521790361543-f645cf042ec4?ixlib=rb-0.3.5&s=df7377b2b89bb6c10e3bf4366680cc0e&auto=format&fit=crop&w=1950&q=80");
+  padding:0;
+}
+
+.features-h3 {
+  background-color:rgba(255,255,255,0.7);
+  padding: 3%;
+}
+
+.features-h3 .fas {
+    margin-bottom: 0.5rem;
+    color: rgb(60,60,60);
+}
+.features-h3 h3 {
+  color: rgb(60,60,60);
+}
+
+hr {
+  width:20%;
+  margin: 0.5rem auto;
+  border-color:black;
+}
+
+.center {
+  text-align: center;
+}
+
+header a{
+  text-decoration:none;
+  position: relative;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+a {
+text-decoration: none;
+
+}
+header a::after{
+  content: ' ';
+  position:absolute;
+  width:0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  bottom:0;
+  transition:1s;
+  left:50%;
+
+}
+header a:hover::after {
+  width:100%;
+  left:0;
+  bottom:-.5rem;
+  border-bottom: 1px solid rgb(84, 134, 135);
+  }
+
+.background-line {
+width: 100%;
+margin: auto;
+border-color: grey;
+position: absolute;
+top: 50%;
+right: 0;
+z-index: -1;
+}
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: green;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+
+
+.mob-show{
+  display:none;
+  }
+
+  @media(max-width:576px) {
+    .flex-end {
+      order:2;
+          }
+.mob-show{
+  display: block;
+}
+
+.mob-hide {
+  display: none;
+}
+
+  }
+
+.intro-container {
+  position:absolute;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: -15%;
+
+}
+
+
+.intro-section {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 40vh;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.intro-section a {
+  background-color: #ff6663;
+  transition: 1s all;
+  color: white;
+}
+
+.intro-section a:hover {
+    background-color: orange;
+    transition: 0.5s background-color;
+
+}
+
+.intro-section .bg-teal {
+  background-color: #00a6a6;
+}
+.contact-form {
+  background-color:#00a6a6;
+  color: white;
+  padding: 5%;
+}
+
+.contact-form form {
+  padding: 3%;
+  margin: auto;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  padding: 1%;
+  margin: 1% 0;
+}
+.contact-form textarea {
+  width: 100%;
+  min-height: 6vw;
+  padding: 1%;
+}
+
+.button{
+  background-color: #ff6663;
+  color: white;
+}
+/* --- targeting a class within a class ---*/
+.contact-form .column {
+  padding-right: 10%;
+}
+input, textarea
+{
+    border-radius: 5px;
+    outline: none;
+}
