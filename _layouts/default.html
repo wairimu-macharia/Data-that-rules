@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!---This is my html head --->
+<head>
+  <title>Data made easy</title>
+  <!-- These are my css links, always put your own css last for specificity; all external resources come first eg google fonts, css -->
+
+  <!---Google fonts--->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,800" rel="stylesheet">
+
+  <!---Gridlex --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+  <!-- Animate.css for text animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!--- My CSS code (this is always the last / bottom css stylesheet) --->
+  <link href="main.css" type="text/css" rel="stylesheet" />
+
+  <!--- Font awesome --->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+<!--- HEADER of website --->
+<header class="grid padded-2 bg-img header-image">
+  <h1 class="col-6 animated fadeInLeft"> <span class="span-color">Data </span> made easy</h1>
+  <nav class="col-6 right mob-hide">
+    <a href="#intro">About Us</a>
+    <a href="#features">Features</a>
+    <a href="#connect">Connect</a>
+  </nav>
+  <nav class="mob-show">
+        <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+         <div class="burger-menu">
+           <a href="#intro">About US</a>
+           <a href="#features">Features</a>
+           <a href="#connect">Connect</a>
+        </div>
+    </nav>
+</header>
+
+{{ content }}
+
+<section id="connect" class="contact-form padded-0">
+  <div class="grid">
+    <div class="col-6_sm-12 column bg-peach padded-5">
+      <h2 class="margin-bottom5">Talk to us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    <div class="col-6_sm-12 padded-5">
+      <form action="https://formspree.io/wairimu.macharia@gmail.com" method="POST">
+        <input type="text" placeholder="Your name" name="name">
+        <input type="email" placeholder="Your email" name="_replyto">
+        <textarea placeholder="Type your message here..."></textarea>
+        <input class="button" type="submit" value="SUBMIT">
+    </form>
+    </div>
+</section>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
